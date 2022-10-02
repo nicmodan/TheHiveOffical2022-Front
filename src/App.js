@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { inistalizeNote } from './reducers/thehivecatlogreducer';
+import NavBar from './Components/Inc/navbar';
 
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       {console.log(newState)}
+      {/* <h2>HELLO WORLD</h2> */}
     </div>
   );
 }
