@@ -5,13 +5,14 @@ import navbarItems from "./navbarItems"
 import Navlist from "./navlist"
 import "./custom-dropdown-menu.css"
 import logo from "../../Resources/HIVELOGO(2).png"
+import { Link } from "react-router-dom"
 
 const NavBar = ()=>{
 
     return(
         <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand herf="#href"> 
+                <Navbar.Brand as={Link} to="/"> 
                     <img
                     src={logo}
                     hieght={60}
@@ -24,7 +25,7 @@ const NavBar = ()=>{
                 <Navbar.Collapse id="responsive-navbar-nav">
 
                     <Nav className="me-auto" > 
-                        <Nav.Link href="#jobs">Catlog</Nav.Link>
+                        <Nav.Link as={Link} to="/Catalog/:caterores">Catlog</Nav.Link>
                         <Dropdown as={NavItem}>
                             <Dropdown.Toggle className="toggle-signe" as={NavLink} />
                             <Dropdown.Menu className="large-dropdown-menu animate slideIn">
@@ -44,24 +45,24 @@ const NavBar = ()=>{
                             </Dropdown.Menu>
                         </Dropdown>
                     
-                        <Nav.Link className="nav-main" href="#jobs">How it works</Nav.Link>
-                        <Nav.Link className="nav-main" href="#jobs">Pricing</Nav.Link>
-                        <Nav.Link className="nav-main" href="#jobs">Blog</Nav.Link>
+                        <Nav.Link className="nav-main" as={Link} to="/HowItWorks">How it works</Nav.Link>
+                        <Nav.Link className="nav-main" as={Link} to="/Pricing">Pricing</Nav.Link>
+                        <Nav.Link className="nav-main" as={Link} to="/Blog">Blog</Nav.Link>
                         {/* <Nav.Link className="nav-main" href="#jobs">Services</Nav.Link> */}
                         <NavDropdown  title="Services" id="basic-nav-dropdown">
                              {/* <div  d-block"> */}
-                                <NavDropdown.Item className="animate slideIn" href="#action/3.1">Transfer Products</NavDropdown.Item>
-                                <NavDropdown.Item className="animate slideIn" href="#action/3.2">
+                                <NavDropdown.Item className="animate slideIn" as={Link} to="/Services/:TransferProducts">Transfer Products</NavDropdown.Item>
+                                <NavDropdown.Item className="animate slideIn" as={Link} to="/Services/:OrderInBulk">
                                 Order In Bulk
                                 </NavDropdown.Item>
-                                <NavDropdown.Item className="animate slideIn" href="#action/3.3">Experts Program</NavDropdown.Item>
+                                <NavDropdown.Item className="animate slideIn" as={Link} to="/Services/:ExpertsProgram">Experts Program</NavDropdown.Item>
                             {/* </div>                                */}
 
                         </NavDropdown>
 
                         <NavDropdown title="Need help" id="basic-nav-dropdown">
                             {/* <div className="animate slideIn d-block"> */}
-                                <NavDropdown.Item className="animate slideIn" href="#action/3.1">Help Centre</NavDropdown.Item>
+                                <NavDropdown.Item className="animate slideIn" as={Link} to="/NeedHelp/:help-center">Help Centre</NavDropdown.Item>
                             {/* </div>     */}
                         </NavDropdown>
                         {/* <Nav.Link className="nav-main" href="#jobs">Need help</Nav.Link> */}

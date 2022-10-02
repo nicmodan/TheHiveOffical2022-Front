@@ -1,0 +1,54 @@
+/* ************HOME PAGE CSS*********** */
+.home-top-info{
+    position: relative;
+
+}
+.home-top-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-top-svg img{
+    width: 100%;
+}
+
+.home-top-info ul{
+    list-style: none;
+    padding-left: 0;
+}
+.home-top-info-position{
+    position: absolute;
+    bottom: 140px;
+    left: 40px;
+}
+.home-top-info-btn button:nth-child(1){
+    margin-right: 20px;
+}
+.purposeofwebapp{
+    width: 22%;
+    position: absolute;
+}
+.purposeofwebapp img{
+    width: 40%;
+}
+.purposeofwebapp img:nth-child(3){
+    border-radius: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
