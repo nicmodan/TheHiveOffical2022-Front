@@ -1,38 +1,502 @@
-.App {
-  text-align: center;
+.continer-body{
+  padding-top: 20px;
+  height: 625px;
+  /* background-color: ; */
+}
+.css-selector {
+  background: linear-gradient(271deg, #f7f2db, #ffee62, #f59c54);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 14s ease infinite;
+  -moz-animation: AnimationName 14s ease infinite;
+  animation: AnimationName 14s ease infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+.continer-body-img{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.continer-body-img img{
+  width: auto;
+  height: auto;
+}
+.continer-body-info{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-position{
+  position: absolute;
+  top: 0px;
+  right: 55px;
+  width: 180px;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+}
+.continer-body-info-form{
+  width: 90%;
+  min-height: 200px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  /* height: ; */
 }
 
-.App-link {
-  color: #61dafb;
+.continer-body-info-form-select{
+  
+}
+/* .continer-body-tag{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.select-product-type{
+    outline: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    margin-top: 15px;
+    border: 0 0 1 0;
+    border: 0;
+    font-size: 20px;
+    border-radius: 0;
+    /* padding: 10px; */
+    border-bottom: thin solid #e1922b;
+    /* border-radius: 4px; */
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+    margin: 0; 
+    background: whitesmoke;     
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-product-type option{
+  background-color: azure;
+  padding-top: 10px;
+}
+.input-product-type{
+  outline: none;
+  width: 100%;
+  border: 0;
+  font-size: 20px;
+  border-bottom: thin solid #e1922b;
+  background-color: whitesmoke;
+  /* border-radius: 5px; */
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;      
+
+}
+.continer-body-info-form-checking{
+  width: 80%;
+  min-height: 550px;
+  display: block;
+}
+/* .continer-body-info-form-checking input{
+  width: 100%;
+} */
+.continer-body-info-form-checking-cost{
+  position: relative;
+  margin-bottom: 25px;
+  height: 95px;
+  
+}
+.continer-body-info-form-checking-cost-svg{
+  /* position: absolute; */
+  font-size: 30px;
+  right: 0;
+  top: 10px;
+}
+.continer-body-info-form-checking-cost-info{
+  position: absolute;
+  text-align: center;
+  top: 65px;
+  right: 40px;
+}
+.continer-body-info-form-checking-cost-info h5{
+  font-size: 16px;
+}
+/* .review-upload-img-color-bar{
+  width: 100%;
+  height: 200px;
+} */
+.design-select-label{
+  padding-top: 10px;
+}
+.design-select-label-image-input{
+  width: 100%;
+  font-size: 20px;
+  border-radius: 0px;
+  color: #f5a91a;
+  font-family: ui-monospace;
+}
+.design-select-label-button{
+  /* height: 50px; */
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+}
+.continer-body-info-form-questions{
+  width: 100%;
+  height: 550px; 
+}
+.spects-for-products-questions{
+  margin: auto;
+  width:85%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spects-for-products-questions-info{
+  width: 100%;
+  height: 90%;
+}
+.spects-for-products-questions-image-color{
+  width: 100%;
+  height: 75%;
+  display: flex;
+}
+
+.spects-preview-products-images{
+  width: 80%;
+  height: 100%;
+  background-color: ghostwhite;
+  border-radius: 10px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spects-preview-products-images-contain{
+  width: 80%;
+  height: 90%;
+  /* margin: auto; */
+}
+.spects-preview-products-img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.spects-preview-products-color{
+  width: 20%;
+  height: 100%;
+  background-color: ghostwhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+}
+.spects-preview-products-color-list{
+  list-style: none;
+  padding-left: 0;
+}
+.spects-preview-products-color-list-style{
+  margin: 20px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 2;
+}
+/* .spects-preview-products-color-list-style-container{
+
+} */
+.spects-preview-products-color-list-style-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.spects-preview-products-color-list-style-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.spects-preview-products-color-list-style-container:hover input ~ .checkmark {
+  background-color: #ccc;
+  /* background-color: white; */
+}
+
+/* When the radio button is checked, add a blue background */
+.spects-preview-products-color-list-style-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.spects-preview-products-color-list-style-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.spects-preview-products-color-list-style-container .checkmark:after {
+  top: 6px;
+  left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.form-control {
+  /* font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1; */
+}
+.spects-products-questions-contain{
+  width: 100%;
+  height: 25%;
+  display: flex;
+}
+.spects-products-questions-size-contain-info{
+  width: 20%;
+  height: 100%;
+  /* background-color: #2196F3; */
+}
+.spects-products-questions-size-contain-info-size-count{
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+.spects-products-questions-size-contain-info-size-main{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 18px;
+  font-weight: bold;
+}
+.spects-products-questions-size-contain-info-count-main{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 13%;
+  left: -5%;
+  /* transform: ; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.spects-for-products-questions-size{
+  width: 80%;
+  height: 100%;
+}
+
+.spects-for-products-questions-size-contain{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.contain-preview-checkbox-details{
+  width: 10;
+}
+.contain-preview-checkbox{
+  margin: auto;
+  display: grid;
+  font-size: 18px;
+  text-align: center;
+  /* width: 16.7%; */
+}
+.contain-preview-checkbox-input-number{
+  width: 30px;
+  height: 20px;
+  border: 0px;
+  outline: none;
+  border-bottom: 2px solid black;
+  background: whitesmoke;
+  text-align: center;
+}
+.continer-body-info-form-address{
+  width: 100%;
+}
+.continer-body-info-form-address-body{
+  width: 80%;
+  height: 89%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+.continer-body-info-form-address-button{
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.design-select-label-button-left{
+  float: left;
+  margin-left: 10px;
+}
+.design-select-label-button-right{
+  float: right;
+  margin-right: 10px;
+}
+.input-address-type{
+  outline: none;
+  width: 100%;
+  border: 0;
+  font-size: 20px;
+  border-bottom: 1px solid #e1922b;
+  border-radius: 0;
+  background: whitesmoke;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;     
+
+}
+/* ************************** PREVIEW ORDER ************************** */
+.preview-body{
+  padding-top: 20px;
+  height: 1500px;
+  /* background-color: ; */
+}
+.preview-body-img{
+  /* height: 1; */
+}
+.preview-body-img img{
+  width: 100px;
+  height: 50px;
+}
+.preview-sections{
+  width: 100%;
+  height: 100%;
+}
+.preview-info{
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.preview-info-main{
+  width: 45%;
+  height: 100%;
+  display: block;
+  margin-left: 10px;
+}
+.preview-info-main-02{
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin-left: 10px;
+}
+.preview-info-main-p{
+  border-bottom: 2px solid whitesmoke;
+  padding: 10px 0 0 10px;
+}
+.preview-products-imgs{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  /* border: 1px solid; */
+  /* padding: 10px; */
+  /* box-shadow: 5px 10px #888888; */
+}
+.preview-products-imgs-designe{
+  width: 45%;
+  height: 100%;
+  margin-left: 10px;
+  /* border: 1px solid; */
+  /* padding: 10px; */
+  /* box-shadow: 5px 10px #888888; */
+}
+.preview-products-imgs-order{
+  width: 45%;
+  height: 100%;
+  margin-left: 10px;
+  background-color: aliceblue;
+  /* border: 1px solid; */
+  /* padding: 10px; */
+  /* box-shadow: 5px 10px #888888; */
+  
+}
+.preview-products-img{
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  /* padding: 10px; */
+  box-shadow: 5px 10px #888888;
+}
+.preview-order{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview-order-card{
+  width: 90%;
+  height: 70%;
+  border: 1px solid;
+  /* padding: 10px; */
+  box-shadow: 5px 10px #888888;
+}
+.preview-order-main{
+  width: 45%;
+  height: 22%;
+  display: block;
+  margin-left: 10px;
+}
+.preview-order-main-p{
+  border-bottom: 2px solid whitesmoke;
+  padding: 2px 0 0 10px;
 }
