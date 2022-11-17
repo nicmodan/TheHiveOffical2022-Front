@@ -3,6 +3,7 @@ import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { inistalizeNote } from './reducers/thehivecatlogreducer';
 import { Routes, Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 // imported Componentes  
 import NavBar from './Components/Inc/navbar';
@@ -13,7 +14,7 @@ import NeedHelp from './Components/Pages/needhelp';
 import Pricing from './Components/Pages/pricing';
 import Services from './Components/Pages/services';
 import Catalog from './Components/Pages/catalog';
-
+import Footer from './Components/Inc/footer';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
   }, [dispatch])
 
   return (
-    <div className="App">
+    <Container fluid className="App">
       <NavBar />
       {console.log(newState)}
       {/* <h2>HELLO WORLD</h2> */}
@@ -45,7 +46,8 @@ function App() {
         <Route path="/Catalog" element={<Catalog />} />
         <Route path="/" element={<Home />} />
       </Routes>
-    </div>
+      <Footer />
+    </Container>
   );
 }
 

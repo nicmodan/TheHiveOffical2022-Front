@@ -1,0 +1,332 @@
+/* *****HFC****** */
+.hfc_name_links{
+    width: 100%;
+    height: 40px;
+    /* background-color: antiquewhite; */
+}
+.hfc_name{
+    position: relative;
+}
+.hfc_name p{
+    position: absolute;
+    margin: 8px;
+    right: 0;
+    border-bottom: 1px solid black;
+    color: black;
+    /* text-decoration: underline; */
+}
+
+.contain-hfc{
+    width: 100%;
+    height: 95%;
+    position: relative;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+.contain-hfc-fbc{
+    width: 100%;
+    height: 100%;
+}
+.contain-hfc-fbc-body{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* *******************PPD**************** */
+.ppd-contain{
+    min-height: 420px;
+    margin-top: 20px;
+}
+.ppd-body-img{
+    width: 35%;
+    height: 170px;
+    /* background-color: #efefef;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.ppd-body-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ******************* PSDD **************** */
+.pspp-body{
+    min-height: 700px;
+    /* background-color: antiquewhite; */
+    position: relative;
+    /* align-items: center; */
+    justify-content: center;
+}
+.pspp-contain-info{
+    width: 80%;
+    height: 95%;
+    position: absolute;
+    background-color: rgb(255, 217, 45);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.pdpp-main-info{
+    width: 40%;
+    height: 80%;
+    /* background-color: aliceblue; */
+    margin-left: 60px;
+}
+.pdpp-sales-info{
+    width: 90%;
+    height: 50%;
+    background-color:#ddaa2c;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pdpp-sales-info-contain{
+    width: 80%;
+    height: 65%;
+}
+.pdpp-sales-info-cost{
+    width: 100%;
+    height: 70%;
+}
+.pdpp-sales-info-cost-row{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.pdpp-sales-info-total{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.pspp-contain-img{
+    width: 40%;
+    height: 85%;
+    position: absolute;
+    background-color: whitesmoke;
+    right: 114px;
+    bottom: 35px;
+    border-radius: 20px;
+}
+.pspp-contain-img img{
+    width: 100%;
+    height: 100%;
+}
+/* ******************* FOOTER **************** */
+.footer-contain{
+    height: 500px;
+    /* background-color: #ddaa2c; */
+}                                    
+.footer-head{
+    height: 10%;
+    display: flex;
+    margin-bottom: 50px;
+}
+.footer-logo{
+    width: 7%;
+    height: 100%;
+    padding-top: 5px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.footer-socials{
+    width: 93%;
+    float: right;
+    /* background-color: aliceblue; */
+}
+.footer-socials ul{
+    display: inline-flex;
+    list-style: none;
+    float: right;
+}
+.footer-socials li{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+.footer-body{
+    height: 75%;
+}
+.footer-body ul{
+    list-style: none;
+    line-height: 40px;
+}
+.footer-body a{
+    color: black;
+    text-decoration: none;
+}
+.footer-body a:hover{
+    color: yellow;
+    transition: 1s easy-in;
+}
+.footer-foot{
+    background-color: #f7f7f7;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-footer-copy-info{
+    display: flex;
+    text-align: center;
+}
+.footer-footer-copy-info p{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.footer-foot-body p{
+    text-align: center;
+}
+/* ***********************BUTTON*********************** */
+
+.button-style{
+    width: auto;
+    background: aliceblue;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 21px;
+}
+.button-style a{
+    text-decoration: none;
+    color: black;
+}
+.catlog-banner-info-button{
+    width: 100px;
+}
+
+
+/* ************* Items List *************** */
+.catlog-edit{
+    position: absolute;
+}
+.edit{
+    top: 0;
+    right: 5px;
+    font-size: 20px;
+}
+.bookmark{
+    top: 0;
+    left: 5px;
+    font-size: 25px;
+    color: #fcd5a1;
+    cursor: pointer;
+}
+.bookmark:hover{
+    transition: 0.5s;
+    color: #f79812;
+}
+.catlog-banner-name{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.catlog-banner-name h4{
+    margin: auto;
+}
+.catlog-banner-name-links{
+    padding-top: 10px;
+}
+.catlog-banner-name-links a{
+    text-decoration: none;
+    color: #ddaa2c;
+}
+.catlog-banner-name-links a:hover{
+    color: #f0cf7c;
+}
+
+/* ***************** LIST TYPE CATALOG CSS ******************* */
+.list-type-catlog-container{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+.list-type-catlog-container img{
+    width: 50%;
+    height: 100%;
+    /* position: absolute; */
+}
+.list-type-catlog-container-info{
+    /* position: absolute; */
+    width: 50%;
+    height: 100%;
+    color: black;
+}
+
+/* ******************* PRCING PLAN ******************* */
+.pricing-header{
+    margin: 40px 0 40px 0;
+}
+.prcing-plan{
+    height: 950px;
+    background-color: white;
+}
+.pricing-plan-toggle-botton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.prcing-plan-contain{
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    background-color: whitesmoke;
+    height: 100%;
+}
+.prcing-plan-contain-list{
+    list-style: none;
+    line-height: 30px;
+    /* padding: 0; */
+}
+.prcing-plan-contain p{
+    margin: 20px 0 20px 0;
+}
+.prcing-plan-contain p{
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+.prcing-plan-contain h1{
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+.prcing-plan-contain h5{
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+.prcing-plan-contain ul{
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+.prcing-plan-contain .button-style {
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    background-color: #f79812;
+    margin-bottom: 20px;
+}
+.prcing-plan-contain-more-info{
+    margin-top: 30px;
+}
+.prcing-plan-contain-more-info ul{
+    list-style: none;
+    line-height: 35px;
+    padding: 0;
+}

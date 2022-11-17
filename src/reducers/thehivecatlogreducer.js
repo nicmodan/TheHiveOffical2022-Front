@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 import thehivecatlog from "../Services/thehivecatlog";
 
+
 const thehivecatlogSlice = createSlice({
     name: "thehivecatlog",
     initialState: [],
     reducers: {
         setAllItems(state, action){
             return action.payload
-        }
+        },
+        
     }
 })
 

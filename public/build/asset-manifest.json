@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ca62065c.css",
+    "main.js": "/static/js/main.d052bb61.js",
+    "static/media/create_img.png": "/static/media/create_img.e7133c53941626cea62a.png",
+    "static/media/thehiveBanner.png": "/static/media/thehiveBanner.eabc6f5349dcafb22774.png",
+    "static/media/wehandel01.jpg": "/static/media/wehandel01.c235acf337d87bde48af.jpg",
+    "static/media/sell_img.png": "/static/media/sell_img.78c7f388368fa9ec6b14.png",
+    "static/media/HIVELOGO.png": "/static/media/HIVELOGO.0d86c1a63ef5f247c4c1.png",
+    "static/media/HIVELOGO(2).png": "/static/media/HIVELOGO(2).740c502dbc12363ce78f.png",
+    "static/media/thehivecatlogbanner02.png": "/static/media/thehivecatlogbanner02.e81843016228700b6891.png",
+    "static/media/earning.svg": "/static/media/earning.28f3732c125aec9aa6e960d037be5a30.svg",
+    "index.html": "/index.html",
+    "main.ca62065c.css.map": "/static/css/main.ca62065c.css.map",
+    "main.d052bb61.js.map": "/static/js/main.d052bb61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca62065c.css",
+    "static/js/main.d052bb61.js"
+  ]
+}

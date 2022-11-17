@@ -1,4 +1,8 @@
 /* ************HOME PAGE CSS*********** */
+.home-top-section{
+    min-height: 546px;
+    background: lightgoldenrodyellow;
+}
 .home-top-info{
     position: relative;
 
@@ -24,31 +28,268 @@
 .home-top-info-btn button:nth-child(1){
     margin-right: 20px;
 }
+.purposeofwebapp-section{
+    height: 200px;
+    padding-top: 30px;
+}
 .purposeofwebapp{
-    width: 22%;
+    display: block;
+    
+}
+.purposeofwebapp h3{
+    font-size: 25px !important;
+}
+.card-info{
+    display: flex;
+    margin: auto;
+}
+.card-hover-info{
+    padding-top: 10px;
+    /* border: 1px solid black; */
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+    transition: visibility 0s, opacity 1.5s linear;
+    opacity: 0;
+}
+.home-feature-collection{
+    min-height: 460px;
+}
+
+/****************** CATLOG PAGE ***********************/
+.searchBar-contain{
+    height: 100px; 
+}
+.searchBar-Main{
+    margin: auto;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid #a7a4a4;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+}
+.searchBar-Main input{
+    width: 100%;
+    height: 45%;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+.searchBar-Main svg{
+    font-size: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.catlog-banner-contain{
+    min-height: 500px;
+}
+.catlog-banner{
+    width: 100%;
+    height: 100%;
+}
+.catlog-banner h2{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.catlog-banner-body{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.catlog-banner img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
     position: absolute;
 }
-.purposeofwebapp img{
+.catlog-banner-info{
+    width: 380px;
+    height: 160px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 190px;
+    left: 45px;
+}
+.catlog-contain-item{
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    position: relative;
+}
+.catlog-contain-item img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.catlog-contain-item-info{
+    padding-left: 10px;
+}
+.catlog-contain-item:hover{
+    background-color: #e5e5e54d;
+    width: calc(100% + 10px);
+    transition: 0.2s;
+    /* width: ; */
+}
+.catlog-banner-printing-provider{
+    margin: auto;
+    width: 75%;
+    height: 279px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.catlog-banner-printing-provider img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+}
+.catlog-banner-printing-provider-info{
     width: 40%;
+    height: 80%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
-.purposeofwebapp img:nth-child(3){
-    border-radius: 75px;
+.catlog-banner-printing-provider-info .button-style{
+    width: 250px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: auto;
 }
 
+/* ****************************** HOW IT WORKS ****************************** */
+.hiw-dashbord{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hwi-dashbord-contain{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.hwi-dashbord-contain-button{
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+.hwi-dashbord-contain h1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.hwi-dashbord-contain p{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.hwi-dashbord-contain .hwi-dashbord-contain-button{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.css-selector {
+    background: linear-gradient(271deg, #f7f2db, #ffee62, #f59c54);
+    background-size: 600% 600%;
 
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+.hwi-steps{
+    text-align: center;
+}
+.hwi-steps h3{
+    margin: 20px 0 20px 0;
+}
+.hwi-step-contain{
+    height: auto;
+}
+.hwi-step-gif img{
+    width: 100%;
+    height: 100%;
+}
+.hwi-step-info{
+    display: flex;
+    align-items: center;
+}
+.hwi-step-info-contain{
+    /* margin: auto; */
+    width: 80%;
+    height: 50%;
+}
+.hwt-banner{
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hwt-banner img{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.hwt-banner-info{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+}
+/* *************** PRICING Plane *************** */
+.pricing-plan-dashbord{
+    height: 450px;
+    background-color: #e5e5e54d;
+}
+.pricing-plan-dashbord-info-contain{
+    display: flex;
+    align-items: center;
+    /* background-color: ; */
+    /* justify-content: center; */
+}
+.pricing-plan-dashbord-info{
+    line-height: 25px;
+    align-self: center;
+}
+.pricing-plan-dashbord img{
+    width: 100%;
+    height: 100%;
+}
+.prcing-plan-question{
+    width: 70%;
+}
+.prcing-plan-question-ans{
+    padding-left: 30px;
+}
+.pricing-plan-Icon{
+    font-size: 23px;
+}
+.pricing-plan-questions-ans-info{
+    margin-top: 30px;
+    line-height: 25px;
+}

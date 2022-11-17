@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:3001/api/thehivecatlog/"
+const url = "api/thehivecatlog/"
 
 const getAll = async()=>{
     const response = await axios.get(url)

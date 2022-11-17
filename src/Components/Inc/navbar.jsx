@@ -10,7 +10,7 @@ import { Link } from "react-router-dom"
 const NavBar = ()=>{
 
     return(
-        <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar fixed="top" collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                 <Navbar.Brand as={Link} to="/"> 
                     <img
@@ -25,7 +25,7 @@ const NavBar = ()=>{
                 <Navbar.Collapse id="responsive-navbar-nav">
 
                     <Nav className="me-auto" > 
-                        <Nav.Link as={Link} to="/Catalog/:caterores">Catlog</Nav.Link>
+                        <Nav.Link as={Link} to="/Catalog">Catlog</Nav.Link>
                         <Dropdown as={NavItem}>
                             <Dropdown.Toggle className="toggle-signe" as={NavLink} />
                             <Dropdown.Menu className="large-dropdown-menu animate slideIn">

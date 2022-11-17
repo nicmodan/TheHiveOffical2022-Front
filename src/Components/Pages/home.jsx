@@ -1,31 +1,38 @@
 import React from "react";
 import "./pages.css"
 import { Container, Row, Col, Button } from "react-bootstrap";
-import topsvg from "../../Resources/Fashionblogging.gif"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faCirclePlay } from "@fortawesome/free-solid-svg-icons";
-import higheProfit from "../../Resources/higher-profits.svg"
-import robustScale from "../../Resources/robust-scaling.svg" 
-import bestselling from "../../Resources/9175330_6532.jpg"
+import { faCheck, faCirclePlay, faMoneyBill1Wave, faChartLine, faShirt} from "@fortawesome/free-solid-svg-icons";
+import logo from "../../Resources/HIVELOGO.png"
+import ButtonHover from "../Inc/button-over";
+import Hfc from "../Inc/hfc";
+import Ppd from "../Inc/ppd";
+import Pspp from "../Inc/pspp";
+// import {ReactComponent  as slideShow} from "../../Resources/theHiveSlideShow(1).svg"
 
 const Home = () =>{
+
     const pwa = {
         HIGHER_PROFITS: [
             "We offer some of the lowest prices in the industries because print providers continuously compete to win your business.",
-            higheProfit
+            faMoneyBill1Wave
         ],
         ROBUST_SCALING: [
             "Easily handle peak holiday seasons, with our wide network of partners and automatic routing functionality.",
-            robustScale
+            faChartLine
         ],
         BEST_SELECTION: [
             "With 600+ products and top-quality brand, you can choose the best products for your business.",
-            bestselling
+            faShirt
         ],
     }
     return(
         <Container>
-            <Row>
+            <Row className="home-top-section">
+                <Col className="home-top-svg" sm={6}>
+                    <img src={logo} alt="Illustrative iamge of The Hive" />
+                    {/* <sld /> */}
+                </Col>
                 <Col className="home-top-info" sm={6}>
                     <div className="home-top-info-position">
                         <h1>
@@ -56,29 +63,22 @@ const Home = () =>{
                         </div>
                     </div>
                 </Col>
-                <Col className="home-top-svg" sm={6}>
-                    <img src={topsvg} alt="Illustrative iamge of The Hive" />
-                </Col>
             </Row>
             {/* PORPOSE OF WEB APPICATION */}
-            <Row>
+            <Row className="purposeofwebapp-section">
                 {
                     Object.keys(pwa).map((val, idx)=>(
-                        <Col key={idx}>
-                            <div className="purposeofwebapp">
-                                <img src={pwa[val][1]} alt={val} />
-                                <h3> {val} </h3>
-                                <p>
-                                {pwa[val][0]}
-                                </p> 
-                            </div>
-                        </Col>
+                       
+                        <ButtonHover key={idx} icons={pwa[val][1]} 
+                                    info={pwa[val][0]} val={val} alt={val}/>
+
+
                     ))
                 }
             </Row>
-            <Row>
-                
-            </Row>
+            <Hfc />
+            <Ppd />
+            <Pspp />
         </Container>
     );
 }
